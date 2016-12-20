@@ -6,12 +6,11 @@ var weatherAPI = `https://api.darksky.net/forecast/458b757b57430aa13526445cfd375
 
 /* ------------------------ Change animation function ----------------------- */
 function determineAnimation () {
+  $('.default').addClass('hide');
   switch (icon) {
     case 'clear-day':
-      animation = 'contain-sunny';
-      break;
     case 'clear-night':
-      animation = 'default';
+      animation = 'contain-sunny';
       break;
     case 'rain':
       animation = 'contain-rainy';
@@ -27,10 +26,11 @@ function determineAnimation () {
     case 'partly-cloudy-night':
       animation = 'contain-cloudy';
       break;
+    default: 'default'
   }
   $('.divToHide').addClass('hide');
+  $(`.${animation}`).css('opacity', '1');
   $(`.${animation}`).removeClass('hide');
-  $('.default').addClass('hide');
 }
 
 /* ------------------- Check current unit function ------- Not DRY ---------- */
@@ -123,6 +123,7 @@ $(document).ready(function () {
   $('#update').click(function () {
     $('.weather-info').css('opacity', '0.1');
     $('.divToHide').css('opacity', '0.1');
+    $('.default').css('opacity', '0.1');
     geolocation();
   });
 
