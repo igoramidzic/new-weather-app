@@ -57,7 +57,7 @@ function changeUnit () {
   $('#unit').text(currentUnit);
 }
 
-/* --------------------------- Fetch city & Country ------------------------- */
+/* --------------------------- Fetch city & country ------------------------- */
 function fetchCityAndCountry () {
   $.ajax({
     url: locationAPI + `${lat},${long}`,
@@ -109,7 +109,7 @@ function geolocation () {
     // Return functionality to update button
     $('#update').removeAttr('disabled');
 
-  // If use does not have geolocation enabled
+  // If user does not have geolocation enabled
   }, function () {
     $('#update').css('background-color', 'red');
     $('#update').val('Error');
