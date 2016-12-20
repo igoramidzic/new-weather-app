@@ -11,6 +11,7 @@ https://obscure-savannah-40135.herokuapp.com/
 ##Technologies
   + Node.JS
   + Express
+  + Javascript/jQuery
   + Bootstrap
   + Sass
 
