@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Weather</title>
+</head>
+<body>
+
+  <div class="main-div container-fluid">
+    <div class="title container-fluid">
+      <h1>Weather App</h1>
+    </div>
+
+    <div class="weather-info container-fluid">
+        <p id="location">Your location</p>
+        <!-- C 8451 F 8457 -->
+        <p class="temperature"><span id="tempNum">XX</span>° <span id="unit">F</span></p>
+        <p id="summary">Summary</p>
+    </div>
+
+    <!-- - - - - - - - - - - - - - - Icons - - - - - - - - - - - - - - - - - -->
+    <div class="default">
+      <div class="icon cloudy">
+        <div class="cloud"></div>
+      </div>
+    </div>
+
+    <div class="divToHide contain-sun-shower hide">
+      <div class="icon sun-shower">
+        <div class="cloud"></div>
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+        <div class="rain"></div>
+      </div>
+    </div>
+
+    <div class="divToHide contain-thunder-storm hide">
+      <div class="icon thunder-storm">
+        <div class="cloud"></div>
+        <div class="lightning">
+          <div class="bolt"></div>
+          <div class="bolt"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divToHide contain-cloudy hide">
+      <div class="icon cloudy">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+      </div>
+    </div>
+
+    <div class="divToHide contain-flurries hide">
+      <div class="icon flurries">
+        <div class="cloud"></div>
+        <div class="snow">
+          <div class="flake"></div>
+          <div class="flake"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divToHide contain-sunny hide">
+      <div class="icon sunny">
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divToHide contain-rainy hide">
+      <div class="icon rainy">
+        <div class="cloud"></div>
+        <div class="rain"></div>
+      </div>
+    </div>
+
+    <div class="update container-fluid">
+      <input id="update" class="btn" type="button" value="Update">
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</script>
+</body>
+</html>

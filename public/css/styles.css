@@ -1,0 +1,35 @@
+body {
+  background-color: #161616; }
+
+.main-div {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  max-width: 944px; }
+  .main-div .title {
+    padding: 20px 0px 50px 0px; }
+    .main-div .title h1 {
+      color: #fff;
+      font-size: 60px; }
+  .main-div .weather-info {
+    color: #fff;
+    font-size: 27px;
+    opacity: 0.1;
+    transition: all 0.25s; }
+    .main-div .weather-info span#unit {
+      color: #5290c3;
+      cursor: pointer; }
+  .main-div .default, .main-div .divToHide {
+    transition: all 0.25s;
+    opacity: 0.1; }
+  .main-div .update input {
+    outline: none;
+    background-color: #5290c3;
+    font-size: 17px;
+    color: #fff;
+    transition: all 0.25s; }
+    .main-div .update input:hover {
+      background-color: #396588; }
+    .main-div .update input:active {
+      outline: none; }
+
+/*# sourceMappingURL=styles.css.map */
