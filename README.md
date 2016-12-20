@@ -11,5 +11,4 @@
   + Bootstrap
   + Sass
 
-#####Annimations by:
-[joshbader](http://codepen.io/joshbader/full/EjXgqr/)
+####Annimations by: [joshbader](http://codepen.io/joshbader/full/EjXgqr/)
