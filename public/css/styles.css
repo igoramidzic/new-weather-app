@@ -21,15 +21,29 @@ body {
   .main-div .default, .main-div .divToHide {
     transition: all 0.25s;
     opacity: 0.1; }
-  .main-div .update input {
+  .main-div .update #updateBtn {
     outline: none;
     background-color: #5290c3;
     font-size: 17px;
     color: #fff;
+    margin-bottom: 20px;
     transition: all 0.25s; }
-    .main-div .update input:hover {
+    .main-div .update #updateBtn:hover {
       background-color: #396588; }
-    .main-div .update input:active {
+    .main-div .update #updateBtn:active {
       outline: none; }
+  .main-div .update #locationTextBox {
+    outline: none;
+    padding-left: 5px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    height: 30px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.25s; }
+    .main-div .update #locationTextBox:focus {
+      background-color: rgba(255, 255, 255, 0.2); }
 
 /*# sourceMappingURL=styles.css.map */
