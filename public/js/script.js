@@ -137,14 +137,16 @@ function geolocation () {
     $('#updateBtn').val('Error');
   });
 }
-// Run on document initialize
-geolocation();
 
-  // User wants to update the weather data
-  $('#updateBtn').click(function () {
+  function dimWeatherInfo () {
     $('.weather-info').css('opacity', '0.1');
     $('.divToHide').css('opacity', '0.1');
     $('.default').css('opacity', '0.1');
+  }
+
+  // User wants to update the weather data
+  $('#updateBtn').click(function () {
+    dimWeatherInfo();
     $(this).val('Update')
     geolocation();
   });
