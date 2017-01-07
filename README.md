@@ -6,7 +6,7 @@
   This app shows you your current location, as well as the current weather and temperature.
   
 ##Check it out on Heroku
-https://obscure-savannah-40135.herokuapp.com/
+https://weather-app-40135.herokuapp.com/
 
 ##Technologies
   + Node.JS
